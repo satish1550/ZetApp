@@ -1,9 +1,34 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Home() {
 
+    const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionFour = document.querySelector(".screenFourCards");
+      if (sectionFour) {
+        const { top, bottom } = sectionFour.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Adjust these values according to your preference
+        if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
+          controls.start({ opacity: 1, y: 0 });
+        } else {
+          controls.start({ opacity: 0, y: 100 });
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls]);
 
   return (
     <>
@@ -168,7 +193,11 @@ export default function Home() {
               />
             </div>
             <div className="screenFourleft">
-              <div className="screenFourCards">
+              <motion.div className="screenFourCards"
+                initial={{ opacity: 0, y: 100 }}
+                animate={controls}
+                transition={{ duration: 0.5 }}
+              >
                 <div className="screenFourCard1">
                   <Image
                     src="/assets/images/screen4Img1.svg"
@@ -223,7 +252,7 @@ export default function Home() {
                   <h1>Financial Products</h1>
                   <p>Trustworthy & high-rated products & categories</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
           <section className="screenFive">

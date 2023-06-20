@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 function About() {
 
-    const controls = useAnimation();
+  const controls = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
