@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500&family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding: 40px 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #0077F5;
+}
+
+.navRight {
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: 17.5px;
+}
+
+Link {
+    cursor: pointer;
+}
+
+.download{
+    height: 30px;
+    width: 120px;
+    color: white;
+    background-color: #0077F5;
+    border: none;
+    border-radius: 8px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.download:hover {
+    color: #0077F5;
+    background-color: transparent;
+    border: 1px solid #0077F5;
+    transition: ease 0.4s;
+}
+
+.footer {
+    /* background-color: #0077F5; */
+    padding: 30px 200px;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    color: white;
+    background-image: url('/assets/images/AboutUs.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    /* border: 2px solid crimson; */
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.line {
+    margin: 10px 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.home {
+    width: 1000px;
+    margin: 20px auto;
+    overflow-x: hidden;
+}
+
+.brands {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 10));
+    }
+}
+
+.item {
+    margin-right: 50px;
+    border: 0.1px solid #E7E7F0;
+    border-radius: 8px;
+}
+
+.img {
+    padding: 10px;
+}
+
+.brandText {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brandText h1 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.brandText p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+
+.screenOne{
+    display: flex;
+    margin: 100px 0 70px 0;
+    position: relative;
+    width: 1500px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #E9F4FF;
+}
+
+.screenOneLeft {
+    margin-top: -50px;
+    margin-left: 42%;
+    position: absolute;
+}
+
+.screenOneRight h1{
+    width: 650px;
+    font-size: 36px;
+    padding: 40px 0 0 40px;
+}
+
+.screenOneRight span {
+    color: #264EFF;
+}
+
+.screenOneRight p {
+    padding: 50px 0 20px 40px;
+    font-size: 19px;
+}
+
+.downloadBtn {
+    padding-left: 40px;
+}
+
+.home1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.screenTwo {
+    margin-top: 10px;
+    background-color: #E9F4FF;
+    padding-bottom: 40px;
+}
+
+.screenTwoTop {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenTwoTop h1 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.screenTwoTop p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.screenTwoBottom {
+    margin: auto;
+    width: 1000px;
+    /* margin-bottom: 40px; */
+}
+
+.cards {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+}
+
+.cardData {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.cardData p{
+    margin-top: 4px;
+}
+
+.card1 {
+    background-color: #EDFFEC;
+}
+
+.card2 {
+    background-color: #FFF1CA;
+}
+
+.card3 {
+    background-color: #FFEEE7;
+}
+
+.card4 {
+    background-color: #FFF5E7;
+}
+
+
+.screenThree {
+    margin-top: 420px;
+    background-color: #145CC5;
+    width: 150%;
+    height: 600px;
+    transform: rotate(350deg) translateX(-25%) translateY(-25%);
+    transform-origin: top left;
+    position: relative;
+}
+
+.screenThreeTop {
+    position: absolute;
+    color: white;
+    top: 70px;
+    left: 1400px;
+    z-index: 9;
+    font-size: 20px;
+    transform: rotate(10deg);
+}
+
+.screenThreeTopScroll {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.screenThreeTopScroll p {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    padding: 0 2em;
+    /* you can adjust the padding to create space between the <p> tags */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.screenThreeTop h2 {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.peoples {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screenThree h1 {
+    color: #000;
+    position: relative;
+    transform: translate(-80%, -80%);
+    z-index: 999;
+
+}
+
+.screenFour {
+    display: flex;
+    margin: auto;
+    margin-left: 250px;
+}
+
+.screenFourCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.screenFourCards h1 {
+    font-size: 20px;
+}
+
+.screenFourCards p {
+    font-size: 16px;
+}
+
+.screenFourRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenFourRight span{
+    color: #264EFF;
+}
+
+.screenFive {
+    margin-top: 500px;
+    margin-bottom: -142px;
+    background-color: #0A2540;
+    width: 150%;
+    height: 600px;
+    transform: rotate(350deg) translateX(-25%) translateY(-25%);
+    transform-origin: top left;
+    position: relative;
+    z-index: -1;
+}
+
+.screenFiveTop {
+    position: absolute;
+    color: white;
+    top: 70px;
+    left: 1150px;
+    z-index: 9;
+    transform: rotate(10deg)
+}
+
+.screenFiveBottom {
+    position: absolute;
+    color: white;
+    top: 270px;
+    left: 750px;
+    z-index: 9;
+    transform: rotate(10deg);
+    display: flex;
+}
+
+.screenFiveBottom h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #9ECFFF;
+}
+
+.step1,
+.step2,
+.step3 {
+    width: 400px;
+    margin: 10px;
+}
+
+.downloadBtns {
+    margin: 10px;
+    margin-left: -15px;
+}
+
+
+/* About Page */
+
+.sectionOne {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.aboutImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sectionOneText {
+    position: absolute;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 35%;
+    left: 33%;
+    color: white;
+    text-align: center;
+}
+
+.sectionOneText h1{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.sectionOneText p{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.sectionTwoTop h1{
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.sectionThree {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    align-items: center;
+    background-color: #FAFBFE;
+    height: 300px;
+}
+
+.sectionThreeTop h1 {
+    text-align: left;
+    /* border: 2px solid red; */
+    margin-left: -620px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.sectionThreeBottom > .featured{
+    margin-right: 40px;
+}
+
+.sectionThreeBottom > .featured1{
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.sectionFour {
+    margin: 50px 130px;
+}
+
+.sectionFourTop{
+    margin-bottom: 40px;
+}
+.sectionFourTop h1{
+    font-size: 30px;
+}
+
+
+.InvestorsImg{
+    margin-bottom: 40px;
+}
+
+.investor{
+    margin-right: 60px;
+}
+
+.sectionFourImages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.sectionFiveTop h1{
+    font-size: 35px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.sectionFiveTop p{
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.sectionFive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFBFE;
+    justify-content: center;
+}
+
+.founder {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.founder1,
+.founder2,
+.founder3{
+    transition: transform 0.3s ease-in-out;
+}
+
+.person {
+    transition: transform 0.3s ease-in-out;
+}
+
+.person:hover {
+    transform: scale(1.1);
+}
+
+.founder1:hover,
+.founder2:hover,
+.founder3:hover{
+    transform: scale(1.1);
+}
