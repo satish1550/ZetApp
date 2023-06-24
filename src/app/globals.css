@@ -307,7 +307,6 @@ li {
     display: inline-block;
     animation: scroll 20s linear infinite;
     padding: 0 2em;
-    /* you can adjust the padding to create space between the <p> tags */
 }
 
 @keyframes scroll {

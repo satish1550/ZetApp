@@ -15,7 +15,6 @@ export default function Home() {
         const { top, bottom } = sectionFour.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Adjust these values according to your preference
         if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
           controls.start({ opacity: 1, y: 0 });
         } else {
